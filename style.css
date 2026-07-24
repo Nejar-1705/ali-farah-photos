@@ -1,66 +1,173 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    background:#efe6db;
-    font-family:Georgia, serif;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    padding:20px;
+
+background:#efe7df;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+min-height:100vh;
+
+padding:30px;
+
+font-family:'Cormorant Garamond',serif;
+
 }
 
 .card{
-    width:380px;
-    background:#5a1822;
-    color:#f6ede5;
-    border-radius:220px 220px 20px 20px;
-    padding:40px 25px;
-    text-align:center;
-    box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+width:390px;
+
+background:#641d2b;
+
+border-radius:220px 220px 20px 20px;
+
+padding:55px 30px;
+
+color:#fdf8f2;
+
+text-align:center;
+
+box-shadow:0 20px 60px rgba(0,0,0,.25);
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.card::before{
+
+content:"";
+
+position:absolute;
+
+top:-80px;
+
+left:-80px;
+
+width:180px;
+
+height:180px;
+
+background:rgba(255,255,255,.05);
+
+border-radius:50%;
+
+}
+
+.card::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-80px;
+
+right:-80px;
+
+width:180px;
+
+height:180px;
+
+background:rgba(255,255,255,.05);
+
+border-radius:50%;
+
 }
 
 .logo{
-    font-size:70px;
-    font-style:italic;
-    color:#f7e7c3;
+
+font-family:'Great Vibes',cursive;
+
+font-size:78px;
+
+color:#edd7b2;
+
+margin-bottom:15px;
+
 }
 
 .names{
-    font-size:42px;
-    margin-top:10px;
-    color:#fff;
+
+font-size:48px;
+
+font-weight:400;
+
+line-height:1.1;
+
+letter-spacing:1px;
+
+margin-bottom:30px;
+
 }
 
 .subtitle{
-    margin:30px 0;
-    line-height:1.8;
-    font-size:18px;
+
+font-size:22px;
+
+line-height:1.7;
+
+margin-bottom:40px;
+
 }
 
 .upload-btn{
-    display:inline-block;
-    margin-top:25px;
-    background:#f6ede5;
-    color:#5a1822;
-    padding:16px 30px;
-    border-radius:15px;
-    text-decoration:none;
-    font-size:20px;
-    font-weight:bold;
-    transition:.3s;
+
+background:#efe7df;
+
+color:#641d2b;
+
+border:none;
+
+padding:18px 30px;
+
+font-size:22px;
+
+border-radius:14px;
+
+cursor:pointer;
+
+transition:.3s;
+
+font-family:inherit;
+
+font-weight:600;
+
+width:100%;
+
 }
 
 .upload-btn:hover{
-    transform:scale(1.05);
+
+transform:translateY(-3px);
+
+}
+
+.limit{
+
+margin-top:20px;
+
+font-size:18px;
+
+opacity:.85;
+
 }
 
 .footer{
-    margin-top:35px;
-    font-size:15px;
-    opacity:.9;
+
+margin-top:45px;
+
+font-size:18px;
+
+opacity:.8;
+
 }
