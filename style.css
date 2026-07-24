@@ -1,530 +1,549 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    background:#efe7df;
-    font-family:'Cormorant Garamond',serif;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:30px;
-    overflow-x:hidden;
+background:#efe7df;
+font-family:'Cormorant Garamond',serif;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:30px;
+overflow-x:hidden;
 }
 
-/* ========================= */
-/* INTRO */
-/* ========================= */
+/* ========================= /
+/ INTRO /
+/ ========================= */
 
 #intro{
 
-    position:fixed;
-    inset:0;
+position:fixed;  
+inset:0;  
 
-    background:#641d2b;
+background:#641d2b;  
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+display:flex;  
+justify-content:center;  
+align-items:center;  
 
-    z-index:9999;
+z-index:9999;  
 
-    transition:1s;
+transition:1s;
 
 }
 
 #intro.hide{
 
-    opacity:0;
-    visibility:hidden;
+opacity:0;  
+visibility:hidden;
 
 }
 
 .intro-content{
 
-    text-align:center;
+text-align:center;  
 
-    animation:introZoom 1.6s ease;
+animation:introZoom 1.6s ease;
 
 }
 
 .intro-content h1{
 
-    font-family:'Great Vibes',cursive;
+font-family:'Great Vibes',cursive;  
 
-    color:#f8f2eb;
+color:#f8f2eb;  
 
-    font-size:84px;
+font-size:84px;  
 
-    font-weight:400;
+font-weight:400;  
 
-    line-height:1;
+line-height:1;
 
 }
 
 .intro-amp{
 
-    font-family:'Great Vibes',cursive;
+font-family:'Great Vibes',cursive;  
 
-    color:#d9b57d;
+color:#d9b57d;  
 
-    font-size:55px;
+font-size:55px;  
 
-    margin:8px 0;
+margin:8px 0;
 
 }
 
 .intro-content p{
 
-    color:#e9d8be;
+color:#e9d8be;  
 
-    margin-top:20px;
+margin-top:20px;  
 
-    letter-spacing:3px;
+letter-spacing:3px;  
 
-    text-transform:uppercase;
+text-transform:uppercase;  
 
-    font-size:15px;
+font-size:15px;
 
 }
 
-/* ========================= */
-/* CARD */
-/* ========================= */
+/* ========================= /
+/ CARD /
+/ ========================= */
 
 .card{
-    width:100%;
-    max-width:390px;
-    background:#641d2b;
-    border-radius:220px 220px 22px 22px;
-    padding:65px 30px 45px;
-    text-align:center;
-    color:white;
-    position:relative;
-    overflow:visible;
-    z-index:2;
-    opacity:0;
-    transform:translateY(50px);
+
+width:100%;  
+max-width:390px;  
+
+background:#641d2b;  
+
+border-radius:220px 220px 22px 22px;  
+
+padding:65px 30px 45px;  
+
+text-align:center;  
+
+color:white;  
+
+position:relative;  
+
+overflow:hidden;  
+
+opacity:0;  
+
+transform:translateY(50px);
+
 }
 
 .card.show{
 
-    animation:cardUp .9s ease forwards;
+animation:cardUp .9s ease forwards;
 
 }
 
-/* ========================= */
-/* FLOWERS */
-/* ========================= */
+/* ========================= /
+/ FLOWERS /
+/ ========================= */
 
 .flower{
-    position:absolute;
-    pointer-events:none;
-    user-select:none;
-    opacity:0;
-    z-index:1;
+
+position:absolute;  
+
+pointer-events:none;  
+
+user-select:none;  
+
+opacity:0;
+
 }
 
 .flower-top{
 
-    width:190px;
+width:190px;  
 
-    top:-70px;
-left:-70px;
-    transform:rotate(-15deg);
+top:-45px;  
 
-    animation:flowerLeft 1.2s ease forwards;
+left:-55px;  
 
-    animation-delay:2.1s;
+transform:rotate(-15deg);  
+
+animation:flowerLeft 1.2s ease forwards;  
+
+animation-delay:2.1s;
 
 }
 
 .flower-bottom{
 
-    width:185px;
+width:185px;  
 
-    bottom:-80px;
-right:-70px;
-    transform:rotate(12deg);
+bottom:-45px;  
 
-    animation:flowerRight 1.2s ease forwards;
+right:-55px;  
 
-    animation-delay:2.5s;
+transform:rotate(12deg);  
+
+animation:flowerRight 1.2s ease forwards;  
+
+animation-delay:2.5s;
 
 }
 
-/* ========================= */
-/* TEXT */
-/* ========================= */
+/* ========================= /
+/ TEXT /
+/ ========================= */
 
 .names{
 
-    font-family:'Great Vibes',cursive;
+font-family:'Great Vibes',cursive;  
 
-    font-size:68px;
+font-size:68px;  
 
-    font-weight:400;
+font-weight:400;  
 
-    line-height:1.05;
+line-height:1.05;  
 
-    color:#fff;
+color:#fff;  
 
-    display:flex;
+display:flex;  
 
-    flex-direction:column;
+flex-direction:column;  
 
-    gap:8px;
+gap:8px;  
 
-    position:relative;
+position:relative;  
 
-    z-index:2;
+z-index:2;
 
 }
 
 .amp{
 
-    color:#d9b57d;
+color:#d9b57d;  
 
-    font-size:48px;
+font-size:48px;
 
 }
 
 .subtitle{
 
-    margin:30px 0 35px;
+margin:30px 0 35px;  
 
-    font-size:22px;
+font-size:22px;  
 
-    line-height:1.7;
+line-height:1.7;  
 
-    position:relative;
+position:relative;  
 
-    z-index:2;
+z-index:2;
 
 }
 
-/* ========================= */
-/* COUNTDOWN */
-/* ========================= */
+/* ========================= /
+/ COUNTDOWN /
+/ ========================= */
 
 #countdown{
 
-    display:flex;
+display:flex;  
 
-    justify-content:center;
+justify-content:center;  
 
-    gap:10px;
+gap:10px;  
 
-    margin-bottom:28px;
+margin-bottom:28px;  
 
-    position:relative;
+position:relative;  
 
-    z-index:2;
+z-index:2;
 
 }
 
 .count-box{
 
-    width:72px;
+width:72px;  
 
-    background:rgba(255,255,255,.08);
+background:rgba(255,255,255,.08);  
 
-    border:1px solid rgba(255,255,255,.15);
+border:1px solid rgba(255,255,255,.15);  
 
-    border-radius:16px;
+border-radius:16px;  
 
-    padding:12px 8px;
+padding:12px 8px;
 
 }
 
 .count-box span{
 
-    display:block;
+display:block;  
 
-    font-size:28px;
+font-size:28px;  
 
-    font-weight:600;
+font-weight:600;
 
 }
 
 .count-box small{
 
-    font-size:13px;
+font-size:13px;  
 
-    opacity:.8;
+opacity:.8;
 
 }
 
-/* ========================= */
-/* UPLOAD BUTTON */
-/* ========================= */
+/* ========================= /
+/ UPLOAD BUTTON /
+/ ========================= */
 
 .upload-btn{
 
-    width:100%;
+width:100%;  
 
-    background:linear-gradient(180deg,#faf6f0,#efe7df);
+background:linear-gradient(180deg,#faf6f0,#efe7df);  
 
-    border:none;
+border:none;  
 
-    border-radius:24px;
+border-radius:24px;  
 
-    padding:22px 18px;
+padding:22px 18px;  
 
-    display:flex;
+display:flex;  
 
-    flex-direction:column;
+flex-direction:column;  
 
-    align-items:center;
+align-items:center;  
 
-    gap:10px;
+gap:10px;  
 
-    cursor:pointer;
+cursor:pointer;  
 
-    position:relative;
+position:relative;  
 
-    z-index:2;
+z-index:2;  
 
-    opacity:0;
+opacity:0;  
 
-    animation:buttonAppear .8s ease forwards,
-              buttonGlow 3s ease-in-out infinite;
+animation:buttonAppear .8s ease forwards,  
+          buttonGlow 3s ease-in-out infinite;  
 
-    animation-delay:3s,4s;
+animation-delay:3s,4s;
 
 }
 
 .camera-circle{
 
-    width:62px;
-    height:62px;
+width:62px;  
+height:62px;  
 
-    border-radius:50%;
+border-radius:50%;  
 
-    background:#641d2b;
+background:#641d2b;  
 
-    color:#fff;
+color:#fff;  
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+display:flex;  
+justify-content:center;  
+align-items:center;  
 
-    font-size:28px;
+font-size:28px;
 
 }
 
 .upload-title{
 
-    color:#641d2b;
+color:#641d2b;  
 
-    font-size:28px;
+font-size:28px;  
 
-    font-weight:600;
+font-weight:600;
 
 }
 
 .upload-subtitle{
 
-    color:#8a6d55;
+color:#8a6d55;  
 
-    font-size:17px;
+font-size:17px;
 
 }
 
 .status{
 
-    margin-top:18px;
+margin-top:18px;  
 
-    color:#f7e6c4;
+color:#f7e6c4;  
 
-    min-height:24px;
+min-height:24px;  
 
-    position:relative;
+position:relative;  
 
-    z-index:2;
+z-index:2;
 
 }
 
 .footer{
 
-    margin-top:35px;
+margin-top:35px;  
 
-    opacity:.85;
+opacity:.85;  
 
-    line-height:1.7;
+line-height:1.7;  
 
-    position:relative;
+position:relative;  
 
-    z-index:2;
+z-index:2;
 
 }
 
-/* ========================= */
-/* ANIMATIONS */
-/* ========================= */
+/* ========================= /
+/ ANIMATIONS /
+/ ========================= */
 
 @keyframes introZoom{
 
-    from{
+from{  
 
-        opacity:0;
+    opacity:0;  
 
-        transform:scale(.85);
+    transform:scale(.85);  
 
-    }
+}  
 
-    to{
+to{  
 
-        opacity:1;
+    opacity:1;  
 
-        transform:scale(1);
+    transform:scale(1);  
 
-    }
+}
 
 }
 
 @keyframes cardUp{
 
-    to{
+to{  
 
-        opacity:1;
+    opacity:1;  
 
-        transform:translateY(0);
+    transform:translateY(0);  
 
-    }
+}
 
 }
 
 @keyframes flowerLeft{
 
-    from{
+from{  
 
-        opacity:0;
+    opacity:0;  
 
-        transform:translate(-30px,-30px) rotate(-25deg);
+    transform:translate(-30px,-30px) rotate(-25deg);  
 
-    }
+}  
 
-    to{
+to{  
 
-        opacity:1;
+    opacity:1;  
 
-        transform:translate(0,0) rotate(-15deg);
+    transform:translate(0,0) rotate(-15deg);  
 
-    }
+}
 
 }
 
 @keyframes flowerRight{
 
-    from{
+from{  
 
-        opacity:0;
+    opacity:0;  
 
-        transform:translate(30px,30px) rotate(25deg);
+    transform:translate(30px,30px) rotate(25deg);  
 
-    }
+}  
 
-    to{
+to{  
 
-        opacity:1;
+    opacity:1;  
 
-        transform:translate(0,0) rotate(12deg);
+    transform:translate(0,0) rotate(12deg);  
 
-    }
+}
 
 }
 
 @keyframes buttonAppear{
 
-    from{
+from{  
 
-        opacity:0;
+    opacity:0;  
 
-        transform:translateY(25px);
+    transform:translateY(25px);  
 
-    }
+}  
 
-    to{
+to{  
 
-        opacity:1;
+    opacity:1;  
 
-        transform:translateY(0);
+    transform:translateY(0);  
 
-    }
+}
 
 }
 
 @keyframes buttonGlow{
 
-    0%,100%{
+0%,100%{  
 
-        box-shadow:
-        0 8px 20px rgba(0,0,0,.18),
-        inset 0 2px 2px rgba(255,255,255,.9);
+    box-shadow:  
+    0 8px 20px rgba(0,0,0,.18),  
+    inset 0 2px 2px rgba(255,255,255,.9);  
 
-    }
+}  
 
-    50%{
+50%{  
 
-        box-shadow:
-        0 12px 30px rgba(100,29,43,.35),
-        inset 0 2px 2px rgba(255,255,255,.9);
-
-    }
+    box-shadow:  
+    0 12px 30px rgba(100,29,43,.35),  
+    inset 0 2px 2px rgba(255,255,255,.9);  
 
 }
 
-/* ========================= */
-/* MOBILE */
-/* ========================= */
+}
+
+/* ========================= /
+/ MOBILE /
+/ ========================= */
 
 @media(max-width:480px){
 
-    .card{
+.card{  
 
-        border-radius:180px 180px 20px 20px;
+    border-radius:180px 180px 20px 20px;  
 
-        padding:55px 22px 35px;
+    padding:55px 22px 35px;  
 
-    }
+}
+
 .names{
 
-        font-size:56px;
+font-size:56px;  
 
-    }
+}  
 
-    .subtitle{
+.subtitle{  
 
-        font-size:20px;
+    font-size:20px;  
 
-    }
+}  
 
-    #countdown{
+#countdown{  
 
-        gap:6px;
+    gap:6px;  
 
-    }
+}  
 
-    .count-box{
+.count-box{  
 
-        width:64px;
+    width:64px;  
 
-    }
+}  
 
-    .flower-top{
+.flower-top{  
 
-        width:165px;
+    width:165px;  
 
-    }
+}  
 
-    .flower-bottom{
+.flower-bottom{  
 
-        width:160px;
+    width:160px;  
 
-    }
+}
 
 }
