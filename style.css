@@ -96,28 +96,18 @@ body{
 /* ========================= */
 
 .card{
-
     width:100%;
     max-width:390px;
-
     background:#641d2b;
-
     border-radius:220px 220px 22px 22px;
-
     padding:65px 30px 45px;
-
     text-align:center;
-
     color:white;
-
     position:relative;
-
-    overflow:hidden;
-
+    overflow:visible;
+    z-index:2;
     opacity:0;
-
     transform:translateY(50px);
-
 }
 
 .card.show{
@@ -131,25 +121,19 @@ body{
 /* ========================= */
 
 .flower{
-
     position:absolute;
-
     pointer-events:none;
-
     user-select:none;
-
     opacity:0;
-
+    z-index:1;
 }
 
 .flower-top{
 
     width:190px;
 
-    top:-45px;
-
-    left:-55px;
-
+    top:-70px;
+left:-70px;
     transform:rotate(-15deg);
 
     animation:flowerLeft 1.2s ease forwards;
@@ -162,10 +146,8 @@ body{
 
     width:185px;
 
-    bottom:-45px;
-
-    right:-55px;
-
+    bottom:-80px;
+right:-70px;
     transform:rotate(12deg);
 
     animation:flowerRight 1.2s ease forwards;
