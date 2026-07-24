@@ -46,25 +46,22 @@ overflow:hidden;
 }
 
 .card::before{
+    content: "";
+    position: absolute;
 
-content:"";
+    top: -20px;
+    left: -20px;
 
-position:absolute;
+    width: 220px;
+    height: 220px;
 
-top:-80px;
+    background-image: url("./images/flowers-top.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left;
 
-left:-80px;
-
-width:180px;
-
-height:180px;
-
-background:rgba(255,255,255,.05);
-
-border-radius:50%;
-
+    z-index: 5;
 }
-
 .card::after{
 
 content:"";
