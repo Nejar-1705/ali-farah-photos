@@ -230,3 +230,24 @@ color:#d9b57d;
 line-height:1;
 
 }
+
+.card{
+    position: relative;
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 180px;
+    height: 180px;
+
+    background: url("images/flowers-top.png") no-repeat;
+
+    background-size: contain;
+
+    pointer-events: none;
+}
