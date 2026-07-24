@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Countdown
     // =========================
 
-    const targetDate = new Date("2026-08-09T18:00:00");
+    const targetDate = new Date("2026-08-09T18:00:00+03:00");
 
     const countdown = document.getElementById("countdown");
 
