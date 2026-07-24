@@ -528,22 +528,3 @@ right:-70px;
     }
 
 }
-
-.flower{
-    opacity:1 !important;
-    z-index:999 !important;
-}
-
-.flower-top{
-    top:-100px !important;
-    left:-100px !important;
-}
-
-.flower-bottom{
-    bottom:-100px !important;
-    right:-100px !important;
-}
-
-.card{
-    overflow:visible !important;
-}
