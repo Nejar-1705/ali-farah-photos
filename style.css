@@ -1,4 +1,4 @@
-*{
+٨*{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -155,4 +155,23 @@ body{
         left:-10%;
     }
 
+}
+
+.card::after{
+    content:"";
+    position:absolute;
+
+    width:58%;
+    aspect-ratio:1/1;
+
+    bottom:-8%;
+    right:-8%;
+
+    background-image:url("./images/flowers-bottom.png");
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:bottom right;
+
+    pointer-events:none;
+    z-index:1;
 }
