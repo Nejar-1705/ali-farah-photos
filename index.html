@@ -1,84 +1,167 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en">
 
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ali & Farah | Engagement Party Photos</title>
+<title>Ali & Farah | Engagement Party</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
+<!-- Intro -->
+
 <div id="intro">
-    <h1>Ali <br>&<br> Farah</h1>
+
+    <div class="intro-content">
+
+        <h1>Ali</h1>
+
+        <div class="intro-amp">&</div>
+
+        <h1>Farah</h1>
+
+        <p>Engagement Party</p>
+
+    </div>
+
 </div>
+
+<!-- Main Card -->
 
 <div class="card">
 
-<h1 class="names">
-<span>Ali</span>
+    <img
+    src="images/flowers-top.png"
+    class="flower flower-top"
+    alt="">
 
-<div class="amp">&</div>
+    <img
+    src="images/flowers-bottom.png"
+    class="flower flower-bottom"
+    alt="">
 
-<span>Farah</span>
-</h1>
+    <h1 class="names">
 
-<p class="subtitle">
-Every picture tells a part of our story.
-<br><br>
-Thank you for celebrating with us.
-</p>
+        <span>Ali</span>
 
-<input
-type="file"
-id="photoInput"
-multiple
-accept="image/*"
-hidden>
+        <span class="amp">&</span>
 
-<button
-class="upload-btn"
-id="uploadBtn">
+        <span>Farah</span>
 
-<span class="camera">📸</span>
+    </h1>
 
-<span class="upload-title">
-Share Your Memories
-</span>
+    <p class="subtitle">
 
-<span class="upload-subtitle">
-Upload up to 50 Photos
-</span>
+        Every picture tells a part of our story.
 
-</button>
+        <br><br>
 
-<p class="limit">
-Maximum 50 Photos
-</p>
+        Thank you for celebrating with us.
 
-<p id="status" class="status">
-Choose your favorite moments ❤️
-</p>
+    </p>
 
-<div class="footer">
+    <!-- Countdown -->
 
-Ali & Farah
+    <div id="countdown">
 
-<br>
+        <div class="count-box">
 
-Engagement Party
+            <span id="days">00</span>
+
+            <small>Days</small>
+
+        </div>
+
+        <div class="count-box">
+
+            <span id="hours">00</span>
+
+            <small>Hours</small>
+
+        </div>
+
+        <div class="count-box">
+
+            <span id="minutes">00</span>
+
+            <small>Minutes</small>
+
+        </div>
+
+        <div class="count-box">
+
+            <span id="seconds">00</span>
+
+            <small>Seconds</small>
+
+        </div>
+
+    </div>
+
+    <!-- Upload -->
+
+    <input
+    type="file"
+    id="photoInput"
+    accept="image/*"
+    multiple
+    hidden>
+
+    <button
+    id="uploadBtn"
+    class="upload-btn">
+
+        <div class="camera-circle">
+
+            📸
+
+        </div>
+
+        <span class="upload-title">
+
+            Share Your Memories
+
+        </span>
+
+        <span class="upload-subtitle">
+
+            Upload up to 50 Photos
+
+        </span>
+
+    </button>
+
+    <p id="status" class="status">
+
+        Choose your favourite moments ❤️
+
+    </p>
+
+    <div class="footer">
+
+        Ali & Farah
+
+        <br>
+
+        Engagement Party
+
+    </div>
 
 </div>
 
-</div>
+<script src="script.js"></script>
 
-<script>
+</body>
 
-window
+</html>
