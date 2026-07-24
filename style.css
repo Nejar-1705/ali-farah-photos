@@ -24,7 +24,8 @@ font-family:'Cormorant Garamond',serif;
 
 .card{
 
-width:390px;
+width:100%;
+max-width:390px;
 
 background:#641d2b;
 
@@ -88,7 +89,7 @@ border-radius:50%;
 
 font-family:'Great Vibes',cursive;
 
-font-size:78px;
+font-size:90px;
 
 color:#edd7b2;
 
@@ -98,7 +99,7 @@ margin-bottom:15px;
 
 .names{
 
-font-size:48px;
+font-size:56px;
 
 font-weight:400;
 
@@ -122,9 +123,9 @@ margin-bottom:40px;
 
 .upload-btn{
 
-background:#efe7df;
+background:#f5efe8;
 
-color:#641d2b;
+background:#5b1824;
 
 border:none;
 
